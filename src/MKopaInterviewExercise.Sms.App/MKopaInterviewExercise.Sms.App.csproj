@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <UserSecretsId>dotnet-MKopaInterviewExercise.Sms.App-B0822895-1DB0-4080-9DCA-63E363ABC848</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+        <PackageReference Include="Polly" Version="7.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MKopaInterviewExercise.Messages\MKopaInterviewExercise.Messages.csproj" />
+      <ProjectReference Include="..\MKopaInterviewExercise.Sms.Messages\MKopaInterviewExercise.Sms.Messages.csproj" />
+    </ItemGroup>
+</Project>
