@@ -28,7 +28,7 @@ namespace MKopaInterviewExercise.Sms.App
         {
             if (await _store.HasSentSms(message.MessageId))
             {
-                _logger.LogWarning($"SendSms command '{message.MessageId}' has already been consumed before.");
+                _logger.LogWarning("SendSms command '{MessageId}' has already been consumed before.", message.MessageId);
                 return;
             }
 
